@@ -10,5 +10,6 @@ Steps:
 * This writes data into DC1, and the data is replicated to search DC where it is indexed
 * Login to node in search DC and run cqlsh
 * Try some searches! (Your data will be different, so edit as needed)
- * `select * from cme.quotes where solr_query = '{"q":"code:mow", "fq":"quotetime:[* TO 2018-05-23T23:03:16.000Z]", "sort":"quotetime desc" }' LIMIT 1 ;` 
+* `SELECT * from codes.quotes where code = 'mow';`
+* `select * from codes.quotes where solr_query = '{"q":"code:mow", "fq":"quotetime:[* TO 2018-05-23T23:03:16.000Z]", "sort":"quotetime desc" }' LIMIT 1 ;` 
 
